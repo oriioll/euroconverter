@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EURO Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="titles">
+            <h1><span class="euro">€</span>URO CONVERTER</h1>
+            <p><span class="euro">€</span> to any currency</p>
+        </div>
+        <img src="euro.png" alt="Euro Symbol" />
+    </header>
+    <main>
+        <form action="convert" id="convert">
+            <div class="values">
+                <div class="value1">
+                    <select id="startCurrency" required>
+                        <option value="">€UR</option>
+                    </select>
+                    <input type="number" name="value1" id="value1" placeholder="Amount in €" required />
+                </div>
+                <button id="button" type="submit">Convert</button>
+                <div class="value2">
+                    <select id="currency" required>
+                        <option value="CHF">CHF</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CNY">CNY</option>
+                        <option value="INR">INR</option>
+                        <option value="RUB">RUB</option>
+                        <option value="BRL">BRL</option>
+                        <option value="MXN">MXN</option>
+                        <option value="KRW">KRW</option>
+
+                    </select>
+                    <input type="number" name="value2" id="value2" placeholder="Converted Amount" readonly />
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://github.com/oriioll" target="_blank">@oriioll</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
