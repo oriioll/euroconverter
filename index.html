@@ -16,6 +16,21 @@
         <img src="euro.png" alt="Euro Symbol" />
     </header>
     <main>
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+        </svg>
+        <nav id="navBar">
+            <ul id="navList">
+                <li><span><a href="index.html">Euro Converter</a></span></li>
+                <li><a href="temperature.html">Temperature Converter</a></li>
+                <li><a href="distance.html">Distance Converter</a></li>
+            </ul>
+        </nav>
         <form action="convert" id="convert">
             <div class="values">
                 <div class="value1">
@@ -39,7 +54,6 @@
                         <option value="BRL">BRL</option>
                         <option value="MXN">MXN</option>
                         <option value="KRW">KRW</option>
-
                     </select>
                     <input type="number" name="value2" id="value2" placeholder="Converted Amount" readonly />
                 </div>

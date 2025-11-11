@@ -185,6 +185,20 @@ button:hover {
     transition: all 0.3s ease;
 }
 
+#menu {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 42px;
+    height: 42px;
+    color: var(--accent-gold);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 20;
+}
+#menu:hover {
+    transform: scale(1.1);
+}
 
 
 /* Responsive: reducir separación y aumentar controles */
@@ -289,6 +303,12 @@ button:hover {
     font-size: 1.2rem;
     line-height: 1.5;
   }
+  #menu {
+    width: 32px;
+    height: 32px;
+    top: 20px;
+    left: 20px;
+  }
 }
 
 /* Animaciones: entradas, flotación de la moneda y micro-interacciones */
@@ -379,3 +399,72 @@ footer a {
 footer a:hover {
     transform: scale(1.1);
 }
+
+
+nav {
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: 300px;
+    height: 90%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+nav {
+    position: fixed;
+    top: 10;               /* ligeramente por debajo del SVG (svg top 50px + altura aprox) */
+    left: 0;             /* sitúa el nav a la derecha del SVG (ajusta si cambias la posición del SVG) */
+    width: auto;
+    height: auto;
+    background-color: rgba(13, 13, 13, 0.7);    
+    border: solid 2px var(--accent-gold-light);
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: row;     /* horizontal */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6px 8px;
+    gap: 8px;
+    z-index: 10;
+    width: 325px;
+    height: 90%;
+    overflow: visible;
+    display: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    padding-top: 30%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;   
+
+}
+nav ul li {
+    height: 100%;
+}
+nav ul li a {
+    color: var(--text-main);
+    text-decoration: none;  
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+}
+nav ul li span a {
+    color: var(--accent-gold-light);
+}
+nav ul li a:hover {
+    color: var(--accent-gold);
+    transform: scale(1.11);
+    cursor: pointer;
+}
+
+
+
